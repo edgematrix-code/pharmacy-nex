@@ -1,0 +1,10 @@
+# Secrets / local environment
+.env
+
+# Local PHP server & editor cruft
+.php-server.log
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

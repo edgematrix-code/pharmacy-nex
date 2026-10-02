@@ -1,0 +1,1 @@
+<div class="container"><h1 class="page-title">Wishlist</h1><?php if (!$products): ?><p class="empty">Your wishlist is empty. <a href="/shop">Browse products</a></p><?php else: ?><ul class="grid cols-4"><?php foreach ($products as $p) echo product_card($p); ?></ul><?php endif ?></div>

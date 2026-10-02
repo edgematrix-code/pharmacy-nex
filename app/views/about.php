@@ -1,0 +1,5 @@
+<div class="container narrow prose"><h1 class="page-title">About Nexus Pharma</h1><p>Nexus Pharma is a pharmaceutical supplier delivering everyday health essentials: vitamins, non-prescription pain relief, cold and flu care, first aid and home health devices.</p><p>All products are sourced from licensed manufacturers, quality tested, and shipped with traceability. Visit the <a href="/quality-testing">Quality & Testing</a> page to learn more about our processes.</p><div class="usp" style="margin-top:30px">
+<div style="background:#f0f2f5;padding:20px;border-radius:8px;text-align:center"><b style="color:#8224e3">Nexus Pharma</b><p style="margin:4px 0 0;color:#555">Your trusted pharmaceutical partner.</p></div>
+<div style="background:#f0f2f5;padding:20px;border-radius:8px;text-align:center"><b style="color:#8224e3">Quality First</b><p style="margin:4px 0 0;color:#555">Every batch is inspected and compliant.</p></div>
+<div style="background:#f0f2f5;padding:20px;border-radius:8px;text-align:center"><b style="color:#8224e3">Fast Delivery</b><p style="margin:4px 0 0;color:#555">Orders ship within 1 business day.</p></div>
+</div></div>

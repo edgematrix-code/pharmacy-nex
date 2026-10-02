@@ -1,0 +1,1 @@
+<div class="container narrow center"><h1 class="page-title">404 — Page not found</h1><p>You may have been looking for something from <strong>Nexus Pharma</strong>.</p><p><a class="btn" href="/shop">Back to the shop</a></p><p>The page you’re looking for doesn’t exist.</p><a class="btn" href="/shop">Go to the shop</a></div>

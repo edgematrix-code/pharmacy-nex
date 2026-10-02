@@ -1,0 +1,1672 @@
+[
+    {
+        "1": "1",
+        "2": "bpc-157",
+        "3": "BPC-157",
+        "4": "peptides",
+        "5": "35.00",
+        "6": "5ml Bottle",
+        "7": "1",
+        "8": "BPC-157 (Body Protection Compound) - a 5ml bottle of 10mg/ml peptide solution. Supports tissue repair and recovery."
+    },
+    {
+        "1": "2",
+        "2": "tb-500",
+        "3": "TB-500",
+        "4": "peptides",
+        "5": "42.00",
+        "6": "5ml Bottle",
+        "7": "1",
+        "8": "TB-500 (Thymosin Beta-4) - a 5ml bottle of 10mg/ml peptide solution. Enhances healing and flexibility."
+    },
+    {
+        "1": "4",
+        "2": "glow-ghk-cu",
+        "3": "GLOW (GHK-Cu)",
+        "4": "peptides",
+        "5": "48.00",
+        "6": "5ml Bottle",
+        "7": "1",
+        "8": "GLOW (GHK-Cu) - a 5ml bottle of copper peptide solution. Supports skin regeneration and collagen production."
+    },
+    {
+        "1": "5",
+        "2": "hcg",
+        "3": "HCG",
+        "4": "hormones",
+        "5": "65.00",
+        "6": "10,000iu",
+        "7": "1",
+        "8": "Human Chorionic Gonadotropin (HCG) - 10,000iu vial. Used in fertility treatments and hormone therapy."
+    },
+    {
+        "1": "6",
+        "2": "hgh-somatropin-100iu",
+        "3": "HGH Somatropin 100iu",
+        "4": "hormones",
+        "5": "85.00",
+        "6": "100iu",
+        "7": "1",
+        "8": "HGH Somatropin 100iu - 10ml vial at 10iu/mL. Human Growth Hormone for anti-aging and recovery."
+    },
+    {
+        "1": "7",
+        "2": "anadrol-oxymetholone",
+        "3": "Anadrol (Oxymetholone)",
+        "4": "steroids",
+        "5": "70.00",
+        "6": "50 Tablets",
+        "7": "1",
+        "8": "Anadrol (Oxymetholone) 50mg - 50 tablets. A powerful oral steroid for strength and mass gains."
+    },
+    {
+        "1": "8",
+        "2": "cialis-tadalafil",
+        "3": "Cialis (Tadalafil)",
+        "4": "other-pharma",
+        "5": "35.00",
+        "6": "10mg Tablets",
+        "7": "1",
+        "8": "Cialis (Tadalafil) 10mg - 30 tablets. PDE5 inhibitor for erectile dysfunction and BPH."
+    },
+    {
+        "1": "10",
+        "2": "deca-nandrolone-decanoate",
+        "3": "Deca (Nandrolone Decanoate)",
+        "4": "steroids",
+        "5": "68.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Deca (Nandrolone Decanoate) 200mg/10ml - 10ml vial. A popular bulking steroid with low androgenic activity."
+    },
+    {
+        "1": "11",
+        "2": "dianabol-methandrostenolone",
+        "3": "Dianabol (Methandrostenolone)",
+        "4": "steroids",
+        "5": "60.00",
+        "6": "50 Tablets",
+        "7": "1",
+        "8": "Dianabol (Methandrostenolone) 30mg - 50 tablets. A fast-acting oral steroid for strength and size."
+    },
+    {
+        "1": "14",
+        "2": "npp-trenbolone-hexahydrobenzylcarbonate",
+        "3": "NPP (Trenbolone Hexahydrobenzylcarbonate)",
+        "4": "steroids",
+        "5": "95.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "NPP (Trenbolone Hexahydrobenzylcarbonate) 150mg/10ml - 10ml vial. An advanced anabolic steroid for bulking."
+    },
+    {
+        "1": "3",
+        "2": "testosterone-cypionate",
+        "3": "Testosterone Cypionate",
+        "4": "hormones",
+        "5": "45.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Testosterone Cypionate 250mg/mL - 10ml vial. A long-ester testosterone for hormone replacement therapy."
+    },
+    {
+        "1": "9",
+        "2": "clomiphene",
+        "3": "Clomiphene",
+        "4": "other-pharma",
+        "5": "70.00",
+        "6": "50mg Tablets",
+        "7": "1",
+        "8": "Clomiphene (Clomid) 50mg - oral tablets. A SERM used to stimulate natural testosterone production."
+    },
+    {
+        "1": "12",
+        "2": "masteron-enanthate",
+        "3": "Masteron Enanthate",
+        "4": "steroids",
+        "5": "105.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Masteron Enanthate (Drostanolone Enanthate) 200mg/mL - 10ml vial. A cutting injectable for lean, hard definition."
+    },
+    {
+        "1": "13",
+        "2": "masteron-propionate",
+        "3": "Masteron Propionate",
+        "4": "steroids",
+        "5": "55.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Masteron Propionate (Drostanolone Propionate) 100mg/mL - 10ml vial. A fast-acting cutting injectable."
+    },
+    {
+        "1": "15",
+        "2": "oxandrolone",
+        "3": "Oxandrolone",
+        "4": "steroids",
+        "5": "90.00",
+        "6": "10mg Tablets",
+        "7": "1",
+        "8": "Oxandrolone (Anavar) 10mg - oral tablets. A mild oral steroid for lean gains and strength without water retention."
+    },
+    {
+        "1": "16",
+        "2": "anadrol",
+        "3": "Anadrol",
+        "4": "steroids",
+        "5": "80.00",
+        "6": "100 Tablets",
+        "7": "1",
+        "8": "Anadrol (Oxymetholone) 50mg - 100 tablets. A powerful oral steroid for rapid strength and mass gains."
+    },
+    {
+        "1": "17",
+        "2": "bacteriostatic-water",
+        "3": "Bacteriostatic Water",
+        "4": "other-pharma",
+        "5": "13.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Bacteriostatic Water (0.9% benzyl alcohol) - 10ml vial. Used to reconstitute lyophilized peptides and powders."
+    },
+    {
+        "1": "18",
+        "2": "boldenone-undecylenate",
+        "3": "Boldenone Undecylenate",
+        "4": "steroids",
+        "5": "55.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Boldenone Undecylenate (Equipoise 300) 300mg/mL - 10ml vial. A long-acting injectable for steady, lean mass gains."
+    },
+    {
+        "1": "19",
+        "2": "bpc-tb-blue-top-red-dot-1-vial",
+        "3": "BPC+TB \u2013 Blue Top Red Dot 1 Vial",
+        "4": "peptides",
+        "5": "60.00",
+        "6": "1 Vial",
+        "7": "1",
+        "8": "BPC-157 + TB-500 blend - 1 vial (blue top, red dot). A recovery peptide stack for tissue repair and joint support."
+    },
+    {
+        "1": "22",
+        "2": "dianabol",
+        "3": "Dianabol",
+        "4": "steroids",
+        "5": "65.00",
+        "6": "20mg Tablets",
+        "7": "1",
+        "8": "Dianabol (Methandrostenolone) 20mg - oral tablets. A classic oral steroid for fast strength and size gains."
+    },
+    {
+        "1": "23",
+        "2": "glow-blue-top-1-vial",
+        "3": "GLOW \u2013 Blue Top 1 Vial",
+        "4": "peptides",
+        "5": "75.00",
+        "6": "1 Vial",
+        "7": "1",
+        "8": "GLOW (GHK-Cu) - 1 vial (blue top). A copper peptide for skin regeneration, collagen and hair support."
+    },
+    {
+        "1": "24",
+        "2": "hcg-white-top-black-dot-1-vial",
+        "3": "HCG \u2013 White Top Black Dot 1 Vial",
+        "4": "hormones",
+        "5": "35.00",
+        "6": "1 Vial",
+        "7": "1",
+        "8": "HCG (Human Chorionic Gonadotropin) - 1 vial (white top, black dot). Supports natural testosterone production during cycle."
+    },
+    {
+        "1": "25",
+        "2": "human-growth-hormone-black-tops",
+        "3": "Human Growth Hormone \u2013 Black Tops",
+        "4": "hormones",
+        "5": "120.00",
+        "6": "100iu Kit",
+        "7": "1",
+        "8": "Human Growth Hormone (Somatropin) - 100iu kit (black tops). 10 vials of lyophilized HGH for recovery and anti-aging."
+    },
+    {
+        "1": "26",
+        "2": "human-growth-hormone-blue-tops",
+        "3": "Human Growth Hormone \u2013 Blue Tops",
+        "4": "hormones",
+        "5": "120.00",
+        "6": "100iu Kit",
+        "7": "1",
+        "8": "Human Growth Hormone (Somatropin) - 100iu kit (blue tops). 10 vials of lyophilized HGH for recovery and anti-aging."
+    },
+    {
+        "1": "29",
+        "2": "nandrolone-decanoate",
+        "3": "Nandrolone Decanoate",
+        "4": "steroids",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Nandrolone Decanoate (Deca) 200mg/mL - 10ml vial. A popular bulking injectable with low androgenic activity."
+    },
+    {
+        "1": "30",
+        "2": "nandrolone-phenylpropionate",
+        "3": "Nandrolone Phenylpropionate",
+        "4": "steroids",
+        "5": "40.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Nandrolone Phenylpropionate (NPP) 100mg/mL - 10ml vial. A shorter-ester nandrolone for faster, cleaner gains."
+    },
+    {
+        "1": "32",
+        "2": "primobolan-enanthate",
+        "3": "Primobolan Enanthate",
+        "4": "steroids",
+        "5": "110.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Primobolan Enanthate (Methenolone Enanthate) 100mg/mL - 10ml vial. A gentle injectable for slow, quality gains."
+    },
+    {
+        "1": "33",
+        "2": "proviron",
+        "3": "Proviron",
+        "4": "steroids",
+        "5": "80.00",
+        "6": "25mg Tablets",
+        "7": "1",
+        "8": "Proviron (Mesterolone) 25mg - oral tablets. An oral androgen used to harden the look and free up testosterone."
+    },
+    {
+        "1": "34",
+        "2": "retatrutide-white-top-1-vial",
+        "3": "Retatrutide \u2013 White Top 1 Vial",
+        "4": "peptides",
+        "5": "50.00",
+        "6": "1 Vial",
+        "7": "1",
+        "8": "Retatrutide - 1 vial (white top). A next-generation GLP-1/GIP/glucagon triple agonist for weight management."
+    },
+    {
+        "1": "35",
+        "2": "sustanon",
+        "3": "Sustanon",
+        "4": "steroids",
+        "5": "45.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Sustanon 250 (testosterone blend) - 10ml vial. Four testosterone esters for stable, long-lasting levels."
+    },
+    {
+        "1": "36",
+        "2": "tamoxifen",
+        "3": "Tamoxifen",
+        "4": "other-pharma",
+        "5": "60.00",
+        "6": "20mg Tablets",
+        "7": "1",
+        "8": "Tamoxifen (Nolvadex) 20mg - oral tablets. A SERM used for post-cycle therapy and estrogen control."
+    },
+    {
+        "1": "38",
+        "2": "testosterone-enanthate",
+        "3": "Testosterone Enanthate",
+        "4": "hormones",
+        "5": "45.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Testosterone Enanthate 250mg/mL - 10ml vial. A classic long-ester testosterone for steady, stable levels."
+    },
+    {
+        "1": "39",
+        "2": "testosterone-enanthate-300",
+        "3": "Testosterone Enanthate 300",
+        "4": "hormones",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Testosterone Enanthate 300mg/mL - 10ml vial. A higher-concentration testosterone for fewer injections."
+    },
+    {
+        "1": "40",
+        "2": "testosterone-propionate",
+        "3": "Testosterone Propionate",
+        "4": "hormones",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Testosterone Propionate 100mg/mL - 10ml vial. A fast-acting testosterone ester for quick peaks."
+    },
+    {
+        "1": "41",
+        "2": "trenbolone-acetate",
+        "3": "Trenbolone Acetate",
+        "4": "steroids",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Trenbolone Acetate 100mg/mL - 10ml vial. A fast-acting injectable for dramatic strength and lean mass."
+    },
+    {
+        "1": "42",
+        "2": "trenbolone-enanthate",
+        "3": "Trenbolone Enanthate",
+        "4": "steroids",
+        "5": "70.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Trenbolone Enanthate 200mg/mL - 10ml vial. A long-acting trenbolone ester for size, strength and hardness."
+    },
+    {
+        "1": "43",
+        "2": "winstrol",
+        "3": "Winstrol",
+        "4": "steroids",
+        "5": "110.00",
+        "6": "50mg Tablets",
+        "7": "1",
+        "8": "Winstrol (Stanozolol) 50mg - oral tablets. A cutting oral for strength, hardness and vascularity."
+    },
+    {
+        "1": "1823",
+        "2": "p-lsd",
+        "3": "P LSD",
+        "4": "research",
+        "5": "60.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "P LSD - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1824",
+        "2": "fa",
+        "3": "FA",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "FA - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1825",
+        "2": "fma",
+        "3": "FMA",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "FMA - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1826",
+        "2": "f-405405863-6gappndeyq8rh5hadptmys2eoailhz3e",
+        "3": "F 405405863 6gapPNdeyQ8RH5HadPtMys2eoaiLhz3e",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "F 405405863 6gapPNdeyQ8RH5HadPtMys2eoaiLhz3e - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1827",
+        "2": "e9ac2-197b-4926-b8d3-4c13be2c1014-drugs",
+        "3": "E9ac2 197b 4926 B8d3 4c13be2c1014 Drugs",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "E9ac2 197b 4926 B8d3 4c13be2c1014 Drugs - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1828",
+        "2": "i-nbome",
+        "3": "I NBOMe",
+        "4": "research",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "I NBOMe - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1829",
+        "2": "cd",
+        "3": "CD",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "CD - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1830",
+        "2": "ce",
+        "3": "CE",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "CE - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1831",
+        "2": "ci",
+        "3": "CI",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "CI - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1832",
+        "2": "c-b",
+        "3": "C B",
+        "4": "research",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "C B - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1833",
+        "2": "fdck",
+        "3": "Fdck",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Fdck - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1834",
+        "2": "mmc",
+        "3": "Mmc",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Mmc - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1835",
+        "2": "meo-pcp",
+        "3": "MeO PCP",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "MeO PCP - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1836",
+        "2": "cmc",
+        "3": "Cmc",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Cmc - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1837",
+        "2": "cl",
+        "3": "Cl",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Cl - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1838",
+        "2": "emc-4-ethylmethcathinone-crystal",
+        "3": "EMC 4 Ethylmethcathinone Crystal",
+        "4": "research",
+        "5": "45.00",
+        "6": "Crystal",
+        "7": "1",
+        "8": "EMC 4 Ethylmethcathinone Crystal - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1839",
+        "2": "mec",
+        "3": "MEC",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "MEC - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1840",
+        "2": "mec-hyper",
+        "3": "MEC Hyper",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "MEC Hyper - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1841",
+        "2": "aco-dmt",
+        "3": "Aco DMT",
+        "4": "research",
+        "5": "60.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Aco DMT - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1842",
+        "2": "me-tmp",
+        "3": "Me Tmp",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Me Tmp - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1843",
+        "2": "kush",
+        "3": "Kush",
+        "4": "cannabis",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Kush - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1844",
+        "2": "f-php",
+        "3": "F PHP",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "F PHP - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1845",
+        "2": "fpv",
+        "3": "FPV",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "FPV - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1846",
+        "2": "fmph",
+        "3": "Fmph",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Fmph - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1847",
+        "2": "ab-chmfuppyca",
+        "3": "Ab Chmfuppyca",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ab Chmfuppyca - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1848",
+        "2": "mapd",
+        "3": "MAPD",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "MAPD - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1849",
+        "2": "f-akb",
+        "3": "F AKB",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "F AKB - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1850",
+        "2": "cladba",
+        "3": "Cladba",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Cladba - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1851",
+        "2": "d3f697e3bdf7-image",
+        "3": "D3f697e3bdf7 Image",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "D3f697e3bdf7 Image - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1852",
+        "2": "f-emb",
+        "3": "F EMB",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "F EMB - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1853",
+        "2": "apb",
+        "3": "APB",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "APB - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1854",
+        "2": "bupren-naloxone-sll-tabs-8mg-2mg-30ct",
+        "3": "Bupren Naloxone SLl Tabs 8mg 2mg 30ct",
+        "4": "other",
+        "5": "29.99",
+        "6": "Tablets",
+        "7": "1",
+        "8": "Bupren Naloxone SLl Tabs 8mg 2mg 30ct - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1855",
+        "2": "jxhwc6cihjvywfo",
+        "3": "JxhwC6CiHJvYwfO",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "JxhwC6CiHJvYwfO - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1856",
+        "2": "abf",
+        "3": "ABF",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "ABF - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1857",
+        "2": "way-marijuana",
+        "3": "Way Marijuana",
+        "4": "cannabis",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Way Marijuana - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1858",
+        "2": "fmmqflscl",
+        "3": "FmmqFlscL",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "FmmqFlscL - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1859",
+        "2": "ball-kush",
+        "3": "Ball Kush",
+        "4": "cannabis",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ball Kush - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1860",
+        "2": "ms9ai-l-large",
+        "3": "Ms9AI L Large",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ms9AI L Large - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1861",
+        "2": "a-pvp",
+        "3": "A PVP",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "A PVP - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1862",
+        "2": "adbb",
+        "3": "ADBB",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "ADBB - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1864",
+        "2": "amnesia-jelly-hash",
+        "3": "AMNESIA JELLY HASH",
+        "4": "cannabis",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "AMNESIA JELLY HASH - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1865",
+        "2": "amphetamine-powder",
+        "3": "AMPHETAMINE POWDER",
+        "4": "research",
+        "5": "35.00",
+        "6": "Powder",
+        "7": "1",
+        "8": "AMPHETAMINE POWDER - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1867",
+        "2": "afghan-heroin-white",
+        "3": "Afghan Heroin White",
+        "4": "opioids",
+        "5": "40.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Afghan Heroin White - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1868",
+        "2": "alpha-pihp",
+        "3": "Alpha Pihp",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Alpha Pihp - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1869",
+        "2": "alpha-php",
+        "3": "Alpha Php",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Alpha Php - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1870",
+        "2": "amphetamine",
+        "3": "Amphetamine",
+        "4": "research",
+        "5": "35.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Amphetamine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1871",
+        "2": "anavar-50mg",
+        "3": "Anavar 50mg",
+        "4": "steroids",
+        "5": "55.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Anavar 50mg - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1872",
+        "2": "arimidex-1mg",
+        "3": "Arimidex 1mg",
+        "4": "steroids",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Arimidex 1mg - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1874",
+        "2": "dmt",
+        "3": "DMT",
+        "4": "research",
+        "5": "60.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "DMT - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1875",
+        "2": "belviq-lorcaserin",
+        "3": "Belviq Lorcaserin",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Belviq Lorcaserin - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1878",
+        "2": "bromadoline-u-47931e",
+        "3": "Bromadoline U 47931E",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Bromadoline U 47931E - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1879",
+        "2": "bromazolam-powder",
+        "3": "Bromazolam Powder",
+        "4": "supplements",
+        "5": "29.99",
+        "6": "Powder",
+        "7": "1",
+        "8": "Bromazolam Powder - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1880",
+        "2": "brown-powder-heroin",
+        "3": "Brown Powder Heroin",
+        "4": "opioids",
+        "5": "40.00",
+        "6": "Powder",
+        "7": "1",
+        "8": "Brown Powder Heroin - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1882",
+        "2": "2-fdck",
+        "3": "2 FDCK",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "2 FDCK - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1883",
+        "2": "3-mmc-crystal",
+        "3": "3 MMC Crystal",
+        "4": "research",
+        "5": "45.00",
+        "6": "Crystal",
+        "7": "1",
+        "8": "3 MMC Crystal - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1884",
+        "2": "8ball-fishscale-cocaine",
+        "3": "8ball Fishscale Cocaine",
+        "4": "stimulants",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "8ball Fishscale Cocaine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1885",
+        "2": "anesket-1000mg-10ml",
+        "3": "Anesket 1000mg 10ml",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Anesket 1000mg 10ml - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1886",
+        "2": "bio-cocaine",
+        "3": "Bio Cocaine",
+        "4": "stimulants",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Bio Cocaine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1887",
+        "2": "calypsol-ketamine-500mg-10ml",
+        "3": "Calypsol Ketamine 500mg 10ml",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Calypsol Ketamine 500mg 10ml - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1888",
+        "2": "crystal-meth",
+        "3": "Crystal Meth",
+        "4": "research",
+        "5": "45.00",
+        "6": "Crystal",
+        "7": "1",
+        "8": "Crystal Meth - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1889",
+        "2": "dibutylone-crystal",
+        "3": "Dibutylone Crystal",
+        "4": "research",
+        "5": "45.00",
+        "6": "Crystal",
+        "7": "1",
+        "8": "Dibutylone Crystal - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1890",
+        "2": "flake-cocaine",
+        "3": "Flake Cocaine",
+        "4": "stimulants",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Flake Cocaine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1891",
+        "2": "ketamine-anasket-powder",
+        "3": "Ketamine Anasket Powder",
+        "4": "supplements",
+        "5": "29.99",
+        "6": "Powder",
+        "7": "1",
+        "8": "Ketamine Anasket Powder - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1892",
+        "2": "ketamine-mission-pharma-50mg-1ml",
+        "3": "Ketamine Mission Pharma 50mg 1ml",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ketamine Mission Pharma 50mg 1ml - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1893",
+        "2": "ketamine-powder",
+        "3": "Ketamine Powder",
+        "4": "supplements",
+        "5": "29.99",
+        "6": "Powder",
+        "7": "1",
+        "8": "Ketamine Powder - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1894",
+        "2": "ketamine-rotex-50mg-1ml",
+        "3": "Ketamine Rotex 50mg 1ml",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ketamine Rotex 50mg 1ml - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1895",
+        "2": "ketanir-ketamine-500mg",
+        "3": "Ketanir Ketamine 500mg",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ketanir Ketamine 500mg - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1896",
+        "2": "oxycontin-oxycodone-40mg-pills",
+        "3": "Oxycontin Oxycodone 40mg Pills",
+        "4": "opioids",
+        "5": "45.00",
+        "6": "Tablets",
+        "7": "1",
+        "8": "Oxycontin Oxycodone 40mg Pills - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1897",
+        "2": "peruvian-pink-cocaine",
+        "3": "Peruvian Pink Cocaine",
+        "4": "stimulants",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Peruvian Pink Cocaine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1898",
+        "2": "protonitazene",
+        "3": "Protonitazene",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Protonitazene - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1899",
+        "2": "staxyn-10mg",
+        "3": "Staxyn 10mg",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Staxyn 10mg - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1900",
+        "2": "furanylfentanyl",
+        "3": "Furanylfentanyl",
+        "4": "research",
+        "5": "75.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Furanylfentanyl - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1901",
+        "2": "2-nmc",
+        "3": "2 NMC",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "2 NMC - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1906",
+        "2": "cocaine",
+        "3": "Cocaine",
+        "4": "stimulants",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Cocaine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1908",
+        "2": "dimethocaine-powder",
+        "3": "Dimethocaine Powder",
+        "4": "research",
+        "5": "29.99",
+        "6": "Powder",
+        "7": "1",
+        "8": "Dimethocaine Powder - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1911",
+        "2": "fgydlbzzoyh",
+        "3": "FGYdLBZzoyh",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "FGYdLBZzoyh - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1913",
+        "2": "gelato",
+        "3": "GELATO",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "GELATO - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1914",
+        "2": "ghb",
+        "3": "GHB",
+        "4": "sedatives",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "GHB - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1917",
+        "2": "tyimages",
+        "3": "TyImages",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "TyImages - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1918",
+        "2": "hash",
+        "3": "HASH",
+        "4": "cannabis",
+        "5": "30.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "HASH - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1923",
+        "2": "kzx4qqbvhlg3cak",
+        "3": "Kzx4QqbVHLg3cAK",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Kzx4QqbVHLg3cAK - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1926",
+        "2": "lsd",
+        "3": "LSD",
+        "4": "research",
+        "5": "60.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "LSD - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1927",
+        "2": "levitra",
+        "3": "Levitra",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Levitra - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1928",
+        "2": "mdma-crystal",
+        "3": "MDMA Crystal",
+        "4": "research",
+        "5": "45.00",
+        "6": "Crystal",
+        "7": "1",
+        "8": "MDMA Crystal - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1930",
+        "2": "mdphp-free-base",
+        "3": "Mdphp Free Base",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Mdphp Free Base - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1931",
+        "2": "nm-2201",
+        "3": "NM 2201",
+        "4": "research",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "NM 2201 - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1932",
+        "2": "oip-1lo",
+        "3": "OIP 1lo",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "OIP 1lo - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1935",
+        "2": "provigil-200-mg",
+        "3": "Provigil 200 Mg",
+        "4": "stimulants",
+        "5": "50.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Provigil 200 Mg - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1942",
+        "2": "vicodin-es",
+        "3": "Vicodin ES",
+        "4": "opioids",
+        "5": "45.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Vicodin ES - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1945",
+        "2": "add",
+        "3": "Add",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Add - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1948",
+        "2": "ald-52-powder",
+        "3": "Ald 52 Powder",
+        "4": "supplements",
+        "5": "29.99",
+        "6": "Powder",
+        "7": "1",
+        "8": "Ald 52 Powder - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1949",
+        "2": "alprazolam",
+        "3": "Alprazolam",
+        "4": "sedatives",
+        "5": "25.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Alprazolam - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1950",
+        "2": "ambien",
+        "3": "Ambien",
+        "4": "sedatives",
+        "5": "20.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ambien - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1952",
+        "2": "arsenlix",
+        "3": "Arsenlix",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Arsenlix - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1953",
+        "2": "artworks-000587481044-4jbq3u-t",
+        "3": "Artworks 000587481044 4jbq3u T",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Artworks 000587481044 4jbq3u T - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1954",
+        "2": "aspirin",
+        "3": "Aspirin",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Aspirin - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1960",
+        "2": "black-tar",
+        "3": "Black Tar",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Black Tar - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1969",
+        "2": "bullet",
+        "3": "Bullet",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Bullet - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1970",
+        "2": "2fma",
+        "3": "2FMA",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "2FMA - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1972",
+        "2": "a-pvp-crystals",
+        "3": "A PVP Crystals",
+        "4": "research",
+        "5": "45.00",
+        "6": "Crystal",
+        "7": "1",
+        "8": "A PVP Crystals - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1973",
+        "2": "opanas",
+        "3": "Opanas",
+        "4": "opioids",
+        "5": "45.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Opanas - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1974",
+        "2": "acetyle-fentanyl-powder",
+        "3": "Acetyle Fentanyl Powder",
+        "4": "research",
+        "5": "75.00",
+        "6": "Powder",
+        "7": "1",
+        "8": "Acetyle Fentanyl Powder - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1975",
+        "2": "fub-amb-online",
+        "3": "Fub Amb Online",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Fub Amb Online - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1976",
+        "2": "liquid-ketamine",
+        "3": "Liquid Ketamine",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Liquid Ketamine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1977",
+        "2": "chf01unksigsllfd",
+        "3": "ChF01unksIgsllfD ",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "ChF01unksIgsllfD  - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1982",
+        "2": "dax",
+        "3": "Dax",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Dax - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1983",
+        "2": "demerol-100mg",
+        "3": "Demerol 100mg",
+        "4": "opioids",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Demerol 100mg - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1984",
+        "2": "desyrel-100-mg-30-tablet-cid1962-original",
+        "3": "Desyrel 100 Mg 30 Tablet Cid1962 Original",
+        "4": "supplements",
+        "5": "29.99",
+        "6": "Tablets",
+        "7": "1",
+        "8": "Desyrel 100 Mg 30 Tablet Cid1962 Original - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1985",
+        "2": "dexedri",
+        "3": "Dexedri",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Dexedri - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1987",
+        "2": "download-3kj",
+        "3": "Download 3kj",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Download 3kj - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1989",
+        "2": "fluaprazolam-powder",
+        "3": "Fluaprazolam Powder",
+        "4": "supplements",
+        "5": "29.99",
+        "6": "Powder",
+        "7": "1",
+        "8": "Fluaprazolam Powder - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1990",
+        "2": "hand-gun",
+        "3": "Hand Gun",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Hand Gun - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1991",
+        "2": "handgun",
+        "3": "Handgun",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Handgun - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1992",
+        "2": "heroin",
+        "3": "Heroin",
+        "4": "opioids",
+        "5": "40.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Heroin - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1993",
+        "2": "ho",
+        "3": "Ho",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Ho - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1994",
+        "2": "hydro",
+        "3": "Hydro",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Hydro - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1995",
+        "2": "images",
+        "3": "Images",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Images - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1996",
+        "2": "img-x500-65522a7e397a",
+        "3": "Img X500 65522a7e397a",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Img X500 65522a7e397a - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1998",
+        "2": "lyrica",
+        "3": "Lyrica",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Lyrica - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "1999",
+        "2": "methadone-tablets",
+        "3": "Methadone Tablets",
+        "4": "research",
+        "5": "30.00",
+        "6": "Tablets",
+        "7": "1",
+        "8": "Methadone Tablets - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2000",
+        "2": "metshyhylonshye-crystshyal-u",
+        "3": "Metshyhylonshye Crystshyal U",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Metshyhylonshye Crystshyal U - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2002",
+        "2": "morphine",
+        "3": "Morphine",
+        "4": "opioids",
+        "5": "40.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Morphine - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2003",
+        "2": "njrc-ghb",
+        "3": "Njrc Ghb",
+        "4": "sedatives",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Njrc Ghb - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2005",
+        "2": "open-uri20120802-30307-ktrznb",
+        "3": "Open Uri20120802 30307 Ktrznb",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Open Uri20120802 30307 Ktrznb - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2006",
+        "2": "opium",
+        "3": "Opium",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Opium - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2007",
+        "2": "product-jpeg",
+        "3": "Product Jpeg",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Product Jpeg - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2010",
+        "2": "r95qfpibsztqqkup",
+        "3": "R95qFpIBsZTQQKUP",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "R95qFpIBsZTQQKUP - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2011",
+        "2": "stilnox-zolpidem",
+        "3": "Stilnox Zolpidem",
+        "4": "sedatives",
+        "5": "20.00",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Stilnox Zolpidem - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2014",
+        "2": "us",
+        "3": "Us",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Us - Pharmaceutical product sourced from licensed manufacturers."
+    },
+    {
+        "1": "2015",
+        "2": "viagra",
+        "3": "Viagra",
+        "4": "other",
+        "5": "29.99",
+        "6": "10ml Vial",
+        "7": "1",
+        "8": "Viagra - Pharmaceutical product sourced from licensed manufacturers."
+    }
+]
