@@ -47,8 +47,8 @@ function db(): PDO {
         PDO::ATTR_EMULATE_PREPARES => false,
     ]);
     $pdo->exec('CREATE TABLE IF NOT EXISTS categories (slug VARCHAR(50) PRIMARY KEY, name VARCHAR(255) NOT NULL, color VARCHAR(20) NOT NULL)');
-    $pdo->exec('CREATE TABLE IF NOT EXISTS products (id INT AUTO_INCREMENT PRIMARY KEY, slug VARCHAR(100) UNIQUE, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(10,2) NOT NULL, badge VARCHAR(100), in_stock TINYINT(1) DEFAULT 1, description TEXT, filename VARCHAR(255) DEFAULT "", sort_order INT NOT NULL DEFAULT 0, hero TINYINT(1) NOT NULL DEFAULT 0, hero_order INT NOT NULL DEFAULT 0)');
-    ensure_column($pdo, 'products', 'filename', 'VARCHAR(255) DEFAULT ""');
+    $pdo->exec('CREATE TABLE IF NOT EXISTS products (id INT AUTO_INCREMENT PRIMARY KEY, slug VARCHAR(100) UNIQUE, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(10,2) NOT NULL, badge VARCHAR(100), in_stock TINYINT(1) DEFAULT 1, description TEXT, filename VARCHAR(255) DEFAULT \'\', sort_order INT NOT NULL DEFAULT 0, hero TINYINT(1) NOT NULL DEFAULT 0, hero_order INT NOT NULL DEFAULT 0)');
+    ensure_column($pdo, 'products', 'filename', 'VARCHAR(255) DEFAULT \'\'');
     ensure_column($pdo, 'products', 'sort_order', 'INT NOT NULL DEFAULT 0');
     ensure_column($pdo, 'products', 'hero', 'TINYINT(1) NOT NULL DEFAULT 0');
     ensure_column($pdo, 'products', 'hero_order', 'INT NOT NULL DEFAULT 0');
@@ -154,7 +154,7 @@ function seed(PDO $pdo): void {
 
     // Existing catalog is admin-owned. Only backfill the image filename / initial
     // order for legacy rows that predate those columns (runs once).
-    $upd = $pdo->prepare('UPDATE products SET filename=?, sort_order=? WHERE slug=? AND (filename IS NULL OR filename="")');
+    $upd = $pdo->prepare('UPDATE products SET filename=?, sort_order=? WHERE slug=? AND (filename IS NULL OR filename=\'\')');
     $i = 0;
     foreach ($DATA['products'] as $prod) {
         $upd->execute([$prod[6] ?? '', $i, slugify($prod[0])]);
