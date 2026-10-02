@@ -16,8 +16,8 @@ return [
     // MySQL database config
     'db_host'     => env('DB_HOST', '127.0.0.1'),
     'db_name'     => env('DB_NAME', 'nexus'),
-    'db_user'     => env('DB_USER', 'root'),
-    'db_pass'     => env('DB_PASS', ''),   // set DB_PASS in your .env
+    'db_user'     => env('DB_USERNAME', 'root'),
+    'db_pass'     => env('DB_PASSWORD', ''),   // set DB_PASSWORD in your .env
     'db_port'     => env_int('DB_PORT', 3306),
     'admin_user'  => env('ADMIN_USER', 'admin'),
     'admin_pass'  => env('ADMIN_PASS', 'change-me-now'),   // CHANGE THIS in .env before using anywhere real
