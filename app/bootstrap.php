@@ -52,7 +52,7 @@ function db(): PDO {
     ensure_column($pdo, 'products', 'sort_order', 'INT NOT NULL DEFAULT 0');
     ensure_column($pdo, 'products', 'hero', 'TINYINT(1) NOT NULL DEFAULT 0');
     ensure_column($pdo, 'products', 'hero_order', 'INT NOT NULL DEFAULT 0');
-    $pdo->exec('CREATE TABLE IF NOT EXISTS orders (id INT AUTO_INCREMENT PRIMARY KEY, number VARCHAR(20) UNIQUE, name VARCHAR(255), email VARCHAR(255), phone VARCHAR(50), address TEXT, city VARCHAR(100), zip VARCHAR(20), country VARCHAR(100), notes TEXT, subtotal DECIMAL(10,2), shipping DECIMAL(10,2), total DECIMAL(10,2), status VARCHAR(50) DEFAULT "Processing", tracking VARCHAR(100), created_at DATETIME)');
+    $pdo->exec('CREATE TABLE IF NOT EXISTS orders (id INT AUTO_INCREMENT PRIMARY KEY, number VARCHAR(20) UNIQUE, name VARCHAR(255), email VARCHAR(255), phone VARCHAR(50), address TEXT, city VARCHAR(100), zip VARCHAR(20), country VARCHAR(100), notes TEXT, subtotal DECIMAL(10,2), shipping DECIMAL(10,2), total DECIMAL(10,2), status VARCHAR(50) DEFAULT \'Processing\', tracking VARCHAR(100), created_at DATETIME)');
     $pdo->exec('CREATE TABLE IF NOT EXISTS order_items (id INT AUTO_INCREMENT PRIMARY KEY, order_id INT, product_id INT, name VARCHAR(255), qty INT, unit_price DECIMAL(10,2))');
     $pdo->exec('CREATE TABLE IF NOT EXISTS messages (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), email VARCHAR(255), message TEXT, created_at DATETIME)');
     $pdo->exec('CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) UNIQUE NOT NULL, password_hash VARCHAR(255) NOT NULL, created_at DATETIME)');
