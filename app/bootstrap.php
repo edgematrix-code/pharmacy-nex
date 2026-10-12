@@ -152,27 +152,25 @@ function clean_product_name(string $name): string {
     if (preg_match('/^Product #\d+$/', $name)) return $name;   // already a placeholder
     $parts = preg_split('/[^A-Za-z0-9]+/', $name, -1, PREG_SPLIT_NO_EMPTY) ?: [];
     $keep = [];
-    $pending = null;   // a numeric token that may be a leftover image index
-    $saw_dim = false;  // whether a thumbnail-size token was seen
+    $saw_dim = false;
     foreach ($parts as $w) {
         $lower = strtolower($w);
         // Size tokens: 300x300, 600x763, t500x500, u300x300.
         if (preg_match('/^[a-z]?\d{2,4}x\d{2,4}$/i', $w)) {
-            if ($pending !== null && (int)$pending > 3) $keep[] = $pending;
-            $pending = null; $saw_dim = true;
+            // WordPress writes "<name>-1-300x300": the small number before the size is
+            // an image index, not part of the name. Larger numbers are real (BU-300-600x600).
+            if ($keep && preg_match('/^\d+$/', end($keep)) && (int)end($keep) <= 3) array_pop($keep);
+            $saw_dim = true;
             continue;
         }
-        if (in_array($lower, clean_junk_words(), true)) {   // file extensions, "bv", "resized", …
-            if ($pending !== null) { $keep[] = $pending; $pending = null; }
-            continue;
-        }
-        if ($pending !== null) { $keep[] = $pending; $pending = null; }   // real number: dosage, prefix
-        if (preg_match('/^\d+$/', $w)) { $pending = $w; continue; }
+        if (in_array($lower, clean_junk_words(), true)) continue;   // .jpg, .bv, "resized", …
+        if ($keep && $w === end($keep)) continue;                   // collapse repeated index tokens
         $keep[] = $w;
     }
-    if ($pending !== null) {
-        // A trailing 1–3 is an image index when it followed a size, or in a multi-word name.
-        if (!((int)$pending <= 3 && ($saw_dim || count($keep) >= 3))) $keep[] = $pending;
+    // Trailing 1–3 is an image index when a size was in the name, or in a longer name.
+    // "Handgun 2" / "Bullet 1" keep their number: they are two-token names.
+    while ($keep && preg_match('/^\d+$/', end($keep)) && (int)end($keep) <= 3 && ($saw_dim || count($keep) >= 3)) {
+        array_pop($keep);
     }
 
     // Drop tokens that are clearly hash/ID noise (long mixed alphanumeric or long digits).
@@ -201,12 +199,17 @@ function clean_product_name(string $name): string {
     unset($w);
     return implode(' ', $out);
 }
-// Keep a product description in step with its cleaned name (we seed it as "<name> - …").
-function clean_product_description(string $desc, string $old_name, string $new_name): string {
-    if ($desc !== '' && $old_name !== '' && $new_name !== $old_name && str_starts_with($desc, $old_name)) {
-        return $new_name . substr($desc, strlen($old_name));
-    }
-    return $desc;
+// Keep a product description in step with its display name. Descriptions are seeded
+// as "<name> - <text>"; the leading name is swapped for the cleaned one. $junk marks
+// rows whose stored name was a scrape artifact and now shows as "Product #<id>".
+function clean_product_description(string $desc, string $old_name, string $new_name, bool $junk = false): string {
+    $cut = strpos($desc, ' - ');
+    if ($desc === '' || $new_name === '' || $cut === false) return $desc;
+    $head = substr($desc, 0, $cut);
+    if ($head === $new_name) return $desc;
+    $dirty = $junk || $head === $old_name
+        || preg_match('/[0-9]+x[0-9]+|[.](jpg|jpeg|png|gif|webp|bmp|bv)|resized/i', $head);
+    return $dirty ? $new_name . substr($desc, $cut) : $desc;
 }
 // Display name for a product: cleaned up, or "Product #<id>" when nothing is left.
 function display_product_name(string $name, string $filename, int $id): string {
@@ -220,13 +223,13 @@ function normalize_catalog_names(PDO $pdo): void {
     static $done = false;
     if ($done) return;
     $done = true;
-    $dirty = (int)$pdo->query("SELECT COUNT(*) FROM products WHERE name REGEXP '[0-9]+x[0-9]+|[.](jpg|jpeg|png|gif|webp|bmp|bv)|resized' ")->fetchColumn();
+    $dirty = (int)$pdo->query("SELECT COUNT(*) FROM products WHERE name REGEXP '[0-9]+x[0-9]+|[.](jpg|jpeg|png|gif|webp|bmp|bv)|resized' OR (description LIKE '% - %' AND LOCATE(CONCAT(name, ' - '), description) <> 1)")->fetchColumn();
     if ($dirty === 0) return;
     $select = $pdo->query('SELECT id, name, filename, description FROM products ORDER BY id');
     $upd = $pdo->prepare('UPDATE products SET name=?, description=? WHERE id=?');
     foreach ($select->fetchAll() as $r) {
         $clean = display_product_name((string)$r['name'], (string)$r['filename'], (int)$r['id']);
-        $desc = clean_product_description((string)$r['description'], (string)$r['name'], $clean);
+        $desc = clean_product_description((string)$r['description'], (string)$r['name'], $clean, is_junk_image((string)$r['filename']));
         if ($clean !== (string)$r['name'] || $desc !== (string)$r['description']) {
             $upd->execute([$clean, $desc, (int)$r['id']]);
         }
@@ -251,7 +254,8 @@ function seed(PDO $pdo): void {
             $p->execute([$slug, $n, $cat, $price, $badge, $stock, $desc, $file, $i++]);
             $id = (int)$pdo->lastInsertId();
             $clean = display_product_name($n, $file, $id);
-            if ($clean !== $n) $ren->execute([$clean, clean_product_description($desc, $n, $clean), $id]);
+            $clean_desc = clean_product_description($desc, $n, $clean, is_junk_image($file));
+            if ($clean !== $n || $clean_desc !== $desc) $ren->execute([$clean, $clean_desc, $id]);
         }
         return;
     }
