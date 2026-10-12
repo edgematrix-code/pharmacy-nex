@@ -58,6 +58,7 @@ function db(): PDO {
     $pdo->exec('CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, email VARCHAR(255) UNIQUE NOT NULL, password_hash VARCHAR(255) NOT NULL, created_at DATETIME)');
     ensure_column($pdo, 'orders', 'user_id', 'INT NULL');
     seed($pdo);
+    normalize_catalog_names($pdo);
     return $pdo;
 }
 function ensure_column(PDO $pdo, string $table, string $col, string $def): void {
@@ -125,9 +126,111 @@ function junk_image_files(): array {
 function is_junk_image(string $filename): bool {
     return $filename !== '' && in_array($filename, junk_image_files(), true);
 }
-// Display name for a product: gibberish image-based names become "Product #<id>".
+// Words that are scrape/file artifacts, never part of a product name.
+function clean_junk_words(): array {
+    static $w = ['jpeg','jpg','png','gif','webp','bmp','tiff','tif','svg','avif','heic','jfif','ico',
+        'bv','resized','mobile','desktop','tablet','scaled','scale','large','small','medium',
+        'thumb','thumbnail','copy','final','original','orig','image','images','img','photo',
+        'picture','pic','download','downloads','compressed','optimized','optimised'];
+    return $w;
+}
+// Lower-case tokens that are acronyms (or have a fixed casing).
+function clean_acronyms(): array {
+    static $a = ['ghb'=>'GHB','lsd'=>'LSD','dmt'=>'DMT','mdma'=>'MDMA','thc'=>'THC','cbd'=>'CBD','pcp'=>'PCP',
+        'pvp'=>'PVP','hgh'=>'HGH','hcg'=>'HCG','gbl'=>'GBL','npp'=>'NPP','tb'=>'TB','cmc'=>'CMC',
+        'mmc'=>'MMC','mec'=>'MEC','emc'=>'EMC','tmp'=>'TMP','php'=>'PHP','abf'=>'ABF','mapd'=>'MAPD',
+        'fa'=>'FA','fma'=>'FMA','nbome'=>'NBOMe','meo'=>'MeO'];
+    return $a;
+}
+// Measurement units – never upper-cased when they follow a number.
+function clean_units(): array { static $u = ['mg','ml','mcg','g','kg','ct','iu','ui','oz','lb','gr','m']; return $u; }
+
+// Strip the scrape leftovers that crept into scraped product names, e.g.
+// "Anavar-50mg-300x300" -> "Anavar 50mg",
+// "buy-3-meo-pcp-online-300x300.jpg.bv_resized_mobile.jpg.bv" -> "Buy 3 MeO PCP Online".
+function clean_product_name(string $name): string {
+    if (preg_match('/^Product #\d+$/', $name)) return $name;   // already a placeholder
+    $parts = preg_split('/[^A-Za-z0-9]+/', $name, -1, PREG_SPLIT_NO_EMPTY) ?: [];
+    $keep = [];
+    $pending = null;   // a numeric token that may be a leftover image index
+    $saw_dim = false;  // whether a thumbnail-size token was seen
+    foreach ($parts as $w) {
+        $lower = strtolower($w);
+        // Size tokens: 300x300, 600x763, t500x500, u300x300.
+        if (preg_match('/^[a-z]?\d{2,4}x\d{2,4}$/i', $w)) {
+            if ($pending !== null && (int)$pending > 3) $keep[] = $pending;
+            $pending = null; $saw_dim = true;
+            continue;
+        }
+        if (in_array($lower, clean_junk_words(), true)) {   // file extensions, "bv", "resized", …
+            if ($pending !== null) { $keep[] = $pending; $pending = null; }
+            continue;
+        }
+        if ($pending !== null) { $keep[] = $pending; $pending = null; }   // real number: dosage, prefix
+        if (preg_match('/^\d+$/', $w)) { $pending = $w; continue; }
+        $keep[] = $w;
+    }
+    if ($pending !== null) {
+        // A trailing 1–3 is an image index when it followed a size, or in a multi-word name.
+        if (!((int)$pending <= 3 && ($saw_dim || count($keep) >= 3))) $keep[] = $pending;
+    }
+
+    // Drop tokens that are clearly hash/ID noise (long mixed alphanumeric or long digits).
+    $out = [];
+    foreach ($keep as $w) {
+        $len = strlen($w);
+        if ($len >= 12 && preg_match('/^[A-Za-z0-9]+$/', $w) && preg_match('/\d/', $w) && preg_match('/[A-Za-z]/', $w)) continue;
+        if ($len >= 10 && preg_match('/^\d+$/', $w)) continue;
+        $out[] = $w;
+    }
+    if (!$out) return '';
+
+    // Tidy the wording: title-case lower-case words, keep acronyms and codes.
+    foreach ($out as &$w) {
+        $lower = strtolower($w);
+        $acr = clean_acronyms();
+        if (isset($acr[$lower])) { $w = $acr[$lower]; continue; }
+        if ($w === strtoupper($w)) continue;                                  // keep DMT, LSD, HASH
+        if (preg_match('/[A-Z]/', $w) && preg_match('/[a-z]/', $w)) continue; // keep 25I-NBOMe
+        if (preg_match('/^(\d+)([a-z]{1,7})$/', $w, $m) && !in_array($m[2], clean_units(), true) && !preg_match('/[aeiou]/', $m[2])) {
+            $w = $m[1] . strtoupper($m[2]);                                   // 2mmc -> 2MMC, 3cl -> 3CL
+            continue;
+        }
+        if (preg_match('/^[a-z]/', $w)) $w = ucfirst($w);
+    }
+    unset($w);
+    return implode(' ', $out);
+}
+// Keep a product description in step with its cleaned name (we seed it as "<name> - …").
+function clean_product_description(string $desc, string $old_name, string $new_name): string {
+    if ($desc !== '' && $old_name !== '' && $new_name !== $old_name && str_starts_with($desc, $old_name)) {
+        return $new_name . substr($desc, strlen($old_name));
+    }
+    return $desc;
+}
+// Display name for a product: cleaned up, or "Product #<id>" when nothing is left.
 function display_product_name(string $name, string $filename, int $id): string {
-    return is_junk_image($filename) ? 'Product #' . $id : $name;
+    if (is_junk_image($filename)) return 'Product #' . $id;
+    $clean = clean_product_name($name);
+    return $clean === '' ? 'Product #' . $id : $clean;
+}
+// One-off tidy-up of catalog names already stored in the database (scraped rows
+// carry size/extension/"resized" leftovers). Idempotent: skips work once clean.
+function normalize_catalog_names(PDO $pdo): void {
+    static $done = false;
+    if ($done) return;
+    $done = true;
+    $dirty = (int)$pdo->query("SELECT COUNT(*) FROM products WHERE name REGEXP '[0-9]+x[0-9]+|[.](jpg|jpeg|png|gif|webp|bmp|bv)|resized' ")->fetchColumn();
+    if ($dirty === 0) return;
+    $select = $pdo->query('SELECT id, name, filename, description FROM products ORDER BY id');
+    $upd = $pdo->prepare('UPDATE products SET name=?, description=? WHERE id=?');
+    foreach ($select->fetchAll() as $r) {
+        $clean = display_product_name((string)$r['name'], (string)$r['filename'], (int)$r['id']);
+        $desc = clean_product_description((string)$r['description'], (string)$r['name'], $clean);
+        if ($clean !== (string)$r['name'] || $desc !== (string)$r['description']) {
+            $upd->execute([$clean, $desc, (int)$r['id']]);
+        }
+    }
 }
 function seed(PDO $pdo): void {
     global $DATA;
@@ -139,7 +242,7 @@ function seed(PDO $pdo): void {
         // First run: seed the full catalog from data.php. Afterwards the catalog is
         // managed from the admin panel, so we never overwrite or prune it again.
         $p = $pdo->prepare('INSERT INTO products (slug,name,category,price,badge,in_stock,description,filename,sort_order) VALUES (?,?,?,?,?,?,?,?,?)');
-        $ren = $pdo->prepare('UPDATE products SET name=? WHERE id=?');
+        $ren = $pdo->prepare('UPDATE products SET name=?, description=? WHERE id=?');
         $i = 0; $used = [];
         foreach ($DATA['products'] as $prod) {
             [$n, $cat, $price, $badge, $stock, $desc] = $prod;
@@ -147,7 +250,8 @@ function seed(PDO $pdo): void {
             $slug = unique_slug(slugify($n), $used);
             $p->execute([$slug, $n, $cat, $price, $badge, $stock, $desc, $file, $i++]);
             $id = (int)$pdo->lastInsertId();
-            if (is_junk_image($file)) $ren->execute(['Product #' . $id, $id]);
+            $clean = display_product_name($n, $file, $id);
+            if ($clean !== $n) $ren->execute([$clean, clean_product_description($desc, $n, $clean), $id]);
         }
         return;
     }
