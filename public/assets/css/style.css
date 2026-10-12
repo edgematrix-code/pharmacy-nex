@@ -49,6 +49,7 @@ h1,h2,h3{font-weight:500;line-height:1.2;margin:0 0 .5em}
 #filters{display:none;gap:10px;margin-top:14px;flex-wrap:wrap}#filters.open{display:flex}
 #filters select,#filters input{height:42px;border:1px solid var(--line);border-radius:var(--r);padding:0 12px;font:inherit;background:#fff}
 .resultbar{display:flex;justify-content:space-between;align-items:center;padding:22px 0 14px;color:var(--muted);font-weight:500;font-size:15px;border-bottom:1px solid var(--line)}
+.resultbar.views-only{justify-content:flex-end}
 .views{display:flex;gap:18px;align-items:flex-end}
 .views button{background:none;border:0;padding:0 2px 8px;cursor:pointer;color:#9aa3b0;position:relative;display:flex;line-height:0}
 .views button svg{width:24px;height:24px}
@@ -66,7 +67,6 @@ h1,h2,h3{font-weight:500;line-height:1.2;margin:0 0 .5em}
 .grid.cols-2 .pcard:nth-child(2n),
 .grid.cols-3 .pcard:nth-child(3n),
 .grid.cols-4 .pcard:nth-child(4n){border-right:0}
-.grid.cols-2 .pcard:nth-child(4n),
 .grid.cols-3 .pcard:nth-child(4n){border-right:1px solid var(--line)}
 #product-grid .pcard{scroll-margin-top:130px}
 .grid.list{grid-template-columns:1fr}
@@ -94,10 +94,14 @@ h1,h2,h3{font-weight:500;line-height:1.2;margin:0 0 .5em}
 .qty button{width:26px;height:26px;border:1px solid #c3c9d2;background:#fff;border-radius:4px;font-size:18px;line-height:1;cursor:pointer;color:var(--ink)}
 .qty input{width:48px;border:0;text-align:center;font:500 15px 'Outfit',system-ui,sans-serif;background:none;outline:0;-moz-appearance:textfield}.qty input::-webkit-inner-spin-button{-webkit-appearance:none}
 .price{font-weight:500;font-size:16px}.price.big{font-size:32px;font-weight:600;margin:0 0 10px}
+.shipnote{display:flex;align-items:center;justify-content:center;gap:6px;margin:0 0 10px;font-size:12px;font-weight:600;color:#15803d}
+.shipnote svg{width:15px;height:15px;flex:none}
+.pdp-info .shipnote{justify-content:flex-start;font-size:14px;margin-bottom:14px}
+.grid.list .pcard .shipnote{justify-content:flex-start}
 .btn-add{width:100%;height:46px;border:0;border-radius:999px;background:var(--ink);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font:500 14px 'Outfit',system-ui,sans-serif;transition:.2s}
 .btn-add:hover{background:var(--purple)}.btn-add:disabled{background:#d7dbe1;color:#6b7280;cursor:not-allowed}.btn-add .ic{width:18px}
 
-.loadmore{text-align:center;padding:30px 0 50px;color:var(--muted)}.loadmore p{margin:0 0 16px}
+
 .empty{padding:60px 0;text-align:center;color:var(--muted)}
 
 /* home */
@@ -254,7 +258,8 @@ h1,h2,h3{font-weight:500;line-height:1.2;margin:0 0 .5em}
 
 @media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}.pcard:nth-child(4n){border-right:1px solid var(--line)}.pcard:nth-child(3n){border-right:0}.hero h1{font-size:44px}.cat-tiles>div{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:800px){.hdr-main{flex-wrap:wrap;gap:14px}.search{order:3;flex-basis:100%;max-width:none}.hdr-icons span{display:none}.hdr-nav{display:none;flex-direction:column;align-items:flex-start;gap:10px}body.nav-open .hdr-nav{display:flex}.primary{flex-direction:column;gap:6px}.track{margin:0}.burger{display:block;margin-left:auto;order:2}.hdr-icons{order:2;margin-left:auto}
-.grid{grid-template-columns:repeat(2,1fr)}.pcard:nth-child(3n){border-right:1px solid var(--line)}.pcard:nth-child(2n){border-right:0}.pcard h2{font-size:17px}
+.grid,.grid.cols-2,.grid.cols-3,.grid.cols-4{grid-template-columns:repeat(2,1fr)}.grid.list{grid-template-columns:1fr}.pcard:nth-child(3n){border-right:1px solid var(--line)}.pcard:nth-child(2n){border-right:0}.grid.cols-2 .pcard:nth-child(2n+1),.grid.cols-3 .pcard:nth-child(2n+1),.grid.cols-4 .pcard:nth-child(2n+1){border-right:1px solid var(--line)}.grid.cols-2 .pcard:nth-child(2n),.grid.cols-3 .pcard:nth-child(2n),.grid.cols-4 .pcard:nth-child(2n){border-right:0}.pcard h2{font-size:17px}
+.views button[data-view="3"],.views button[data-view="4"]{display:none}
 .hero .container,.pdp-grid,.co-grid,#site-footer .container,.usp{grid-template-columns:1fr}.hero h1{font-size:36px}.hero-art img{max-width:430px}.cat-tiles>div{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.infobar .container{gap:14px 24px}#topbar nav{gap:16px;font-size:12px}.faq-hero h1{font-size:34px}.wish button{opacity:1}}
 
 /* overflow safety */

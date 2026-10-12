@@ -9,9 +9,11 @@
     <div class="tier-select" data-base="<?= $p['price'] ?>"><select aria-label="Bulk pricing" class="tiers"><?php foreach ($t as $x): ?><option value="<?= $x['min'] ?>"><?= e($x['label']) ?> &nbsp; <?= money($x['price']) ?></option><?php endforeach ?></select></div>
     <div class="buyrow"><div class="qty"><button type="button" data-d="-1">−</button><input type="number" name="qty" value="1" min="1" max="99"><button type="button" data-d="1">+</button></div>
       <span class="price" data-price><?= money((float)$p['price']) ?></span></div>
+    <?php if ((float)$p['price'] >= cfg('free_ship_over')): ?><p class="shipnote"><?= icon('truck') ?>Free shipping included</p><?php endif ?>
     <button class="btn-add" aria-label="Add to cart"><?= icon('cart') ?></button>
   </form>
   <?php else: ?>
   <div class="buyrow"><span class="price"><?= money((float)$p['price']) ?></span></div><button class="btn-add" disabled>Out Of Stock</button>
+  <?php if ((float)$p['price'] >= cfg('free_ship_over')): ?><p class="shipnote"><?= icon('truck') ?>Free shipping included</p><?php endif ?>
   <?php endif ?>
 </li>

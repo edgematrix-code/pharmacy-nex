@@ -4,7 +4,9 @@
     <div class="pdp-img"><img src="<?= img_url($p) ?>" alt="<?= e($p['name']) ?>"></div>
     <div class="pdp-info">
       <?php if ($p['badge']): ?><span class="badge static"><?= e($p['badge']) ?></span><?php endif ?>
-      <h1><?= e($p['name']) ?></h1><p class="price big"><?= money((float)$p['price']) ?></p><p class="lead"><?= e($p['description']) ?></p>
+      <h1><?= e($p['name']) ?></h1><p class="price big"><?= money((float)$p['price']) ?></p>
+      <p class="shipnote"><?= icon('truck') ?><?= (float)$p['price'] >= cfg('free_ship_over') ? 'Free shipping included on this item' : 'Free shipping on orders over ' . e(cfg('currency')) . number_format((float)cfg('free_ship_over'), 0) ?></p>
+      <p class="lead"><?= e($p['description']) ?></p>
       <table class="tier-table"><thead><tr><th>Quantity</th><th>Price each</th><th>You save</th></tr></thead><tbody>
       <?php foreach (tiers((float)$p['price']) as $k => $t): ?><tr><td><?= $t['min'] ?><?= $k === 2 ? '+' : '' ?></td><td><?= money($t['price']) ?></td><td><?= $t['price'] < $p['price'] ? money($p['price'] - $t['price']) : '—' ?></td></tr><?php endforeach ?></tbody></table>
       <?php if ($p['in_stock']): ?>

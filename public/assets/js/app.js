@@ -107,6 +107,8 @@ ready(function () {
   };
   let saved = '4';
   try { saved = localStorage.getItem(KEY) || '4'; } catch (e) {}
+  // Phones show the two-column grid; the 3/4-column views only exist on wider screens.
+  if (window.matchMedia('(max-width:800px)').matches && (saved === '3' || saved === '4')) saved = '2';
   apply(saved);
   sw.addEventListener('click', e => {
     const b = e.target.closest('button[data-view]');

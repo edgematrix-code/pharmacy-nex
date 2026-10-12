@@ -46,7 +46,7 @@ $cur = rtrim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/') ?: '/'; ?>
     <a class="track" href="/tracking-order">Track Order</a>
   </div>
   <div class="infobar"><div class="container">
-    <span><?= icon('truck') ?>Fast domestic shipping</span><span><?= icon('shield') ?>Secure checkout</span>
+    <span><?= icon('truck') ?>Free shipping on orders over <?= e(cfg('currency')) . number_format((float)cfg('free_ship_over'), 0) ?></span><span><?= icon('shield') ?>Secure checkout</span>
     <span><?= icon('gift') ?>Bulk product discounts</span><span><?= icon('mail') ?><?= e(cfg('email')) ?></span></div></div>
 </header>
 

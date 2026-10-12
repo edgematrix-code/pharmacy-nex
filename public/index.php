@@ -38,40 +38,15 @@ switch (true) {
 
     case $path === '/shop' || $seg[0] === 'product-category':
         $cat = $seg[0] === 'product-category' ? ($seg[1] ?? '') : ($_GET['cat'] ?? '');
-        $q = trim($_GET['s'] ?? ''); $sort = $_GET['sort'] ?? 'default'; $pg = max(1, (int)($_GET['page'] ?? 1));
+        $q = trim($_GET['s'] ?? ''); $sort = $_GET['sort'] ?? 'default';
         $where = ['1=1']; $args = [];
         if ($cat !== '' && $cat !== '0') { $where[] = 'category=?'; $args[] = $cat; }
         if ($q !== '') { $where[] = '(name LIKE ? OR description LIKE ?)'; $args[] = "%$q%"; $args[] = "%$q%"; }
         $order = ['price-asc' => 'price ASC', 'price-desc' => 'price DESC', 'name' => 'name ASC'][$sort] ?? 'sort_order ASC, id ASC';
-        $cnt = db()->prepare('SELECT COUNT(*) FROM products WHERE ' . implode(' AND ', $where)); $cnt->execute($args); $total = (int)$cnt->fetchColumn();
-        $shown = min($total, $pg * cfg('per_page'));
-        $st = db()->prepare('SELECT * FROM products WHERE ' . implode(' AND ', $where) . " ORDER BY $order LIMIT $shown"); $st->execute($args);
+        // The whole catalogue is listed on one page – no result counter, no paging.
+        $st = db()->prepare('SELECT * FROM products WHERE ' . implode(' AND ', $where) . " ORDER BY $order"); $st->execute($args);
         $products = $st->fetchAll();
-        
-        // Check if this is an AJAX request for loading more products
-        if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') {
-            // Return only the product grid HTML
-            ob_start();
-            ?>
-            <ul class="grid cols-4" id="product-grid" data-page="<?= $pg ?>" data-cat="<?= e($cat) ?>" data-sort="<?= e($sort) ?>" data-q="<?= e($q) ?>">
-            <?php foreach ($products as $p) echo product_card($p); ?>
-            </ul>
-            <div class="loadmore">
-              <p>Showing <?= $shown ?> of <?= $total ?> items</p>
-              <?php if ($shown < $total): ?>
-                <button class="btn ghost load-more-btn" data-next-page="<?= $pg + 1 ?>">Load More Products</button>
-              <?php else: ?>
-                <p>All products loaded!</p>
-              <?php endif; ?>
-            </div>
-            <?php
-            $html = ob_get_clean();
-            header('Content-Type: text/html; charset=utf-8');
-            echo $html;
-            exit;
-        }
-        
-        page('shop', 'Shop', compact('products', 'total', 'shown', 'cat', 'q', 'sort', 'pg'), 'shop'); break;
+        page('shop', 'Shop', compact('products', 'cat', 'q', 'sort'), 'shop'); break;
 
     case $seg[0] === 'product' && isset($seg[1]):
         $st = db()->prepare('SELECT p.*, c.name AS cat_name FROM products p JOIN categories c ON c.slug=p.category WHERE p.slug=?'); $st->execute([$seg[1]]);
