@@ -178,7 +178,7 @@ switch (true) {
         page('tracking', 'Track Order', compact('order', 'lines', 'err')); break;
 
     case $path === '/faq':
-        page('faq', 'FAQ', ['faq' => $DATA['faq']], 'page-faq'); break;
+        page('faq', 'FAQ', ['faq' => $DATA['faq'] ?? []], 'page-faq'); break;
 
     case $path === '/contact-us':
         $sent = false; $err = '';
