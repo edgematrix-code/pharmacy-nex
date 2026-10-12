@@ -9,7 +9,7 @@ $cur = rtrim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/') ?: '/'; ?>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="/assets/img/logo.png" type="image/png">
 <link rel="stylesheet" href="/assets/css/style.css?v=<?= @filemtime(__DIR__ . '/../../public/assets/css/style.css') ?: time() ?>">
-<script defer src="https://monitor.test/tracker.js"></script>
+<script defer src="https://monitor.wasmer.app/tracker.js"></script>
 </head>
 <body class="<?= e($bodyClass) ?>">
 <div id="topbar"><nav>
