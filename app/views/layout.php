@@ -10,6 +10,15 @@ $cur = rtrim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/') ?: '/'; ?>
 <link rel="icon" href="/assets/img/logo.png" type="image/png">
 <link rel="stylesheet" href="/assets/css/style.css?v=<?= @filemtime(__DIR__ . '/../../public/assets/css/style.css') ?: time() ?>">
 <script defer src="https://monitor.wasmer.app/tracker.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1J2XNNWWSZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1J2XNNWWSZ');
+</script>
 </head>
 <body class="<?= e($bodyClass) ?>">
 <div id="topbar"><nav>
